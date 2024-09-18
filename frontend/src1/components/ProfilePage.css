@@ -1,0 +1,158 @@
+/* General Container Setup */
+.profile-page-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background-image: url('/home/mathu/Desktop/freelance/frontend/image.avif'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+  width: 25%;
+  position: sticky;
+  top: 20px;
+  padding: 20px;
+  background-color: rgba(244, 244, 244, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile-avatar {
+  margin-bottom: 15px;
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-description-box {
+  width: 90%; /* Normalized size */
+  max-width: 500px; /* Adjusts max width */
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background-color: #f9f9f9; /* Light background for the text box */
+}
+
+/* Ratings and Community Section */
+.ratings-community h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Links Section */
+.links-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0073b1;
+}
+
+/* Education Section */
+.education-header {
+  cursor: pointer;
+  color: #0073b1;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.education-field {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.education-field.vertical-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+select, input[type="number"], input[type="text"], textarea {
+  width: 90%; /* Normalized size */
+  max-width: 500px; /* Ensures fields aren't too wide */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Volunteering Section */
+
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Freelancing Work, Progress, Tech Stacks */
+textarea {
+  width: 90%; /* Normalized size */
+  max-width: 500px;
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* Create Post Button */
+.create-post-btn {
+  display: block;
+  align-items: center;
+  margin: 20px 0;
+  padding: 12px 24px;
+  border: none;
+  background-color: #0073b1;
+  color: white;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-post-btn:hover {
+  background-color: #005580;
+}
+
+/* Animation for Fade-in Effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
